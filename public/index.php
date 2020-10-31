@@ -3,6 +3,10 @@
 include '../app/configuracao.php';
 include '../app/Libraries/Rota.php';
 include '../app/Libraries/Controller.php';
+include_once APP."/libraries/Database.php";
+include_once APP."/Models/Funcoes.php";
+
+$db = new Database;
 
 ?>
 
