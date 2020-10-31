@@ -1,15 +1,5 @@
 <?php 
 
-    include 'sql/ConexaoBD.php';
-    include_once 'sql/Funcoes.php';
-
-    if(isset ($_COOKIE["ID"])){
-
-        $id = base64_decode($_COOKIE["ID"]);
-        
-        $DadosEmpresas = PegarDadosEmpresaPeloIdUsuario($base, $id);
-
-    }
 
 ?> 
 
@@ -42,7 +32,7 @@
         <ul>
             <?php
 
-                $i=0; 
+               /* $i=0; 
                 
                 if(isset ($_COOKIE["ID"])){
 
@@ -66,6 +56,7 @@
                     }
                 
                 }
+                */
 
             ?>
         </ul>

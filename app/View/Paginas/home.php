@@ -50,7 +50,7 @@
                     <div id = "WelcomeHeader">
 
                         <div id = "WelcomeNav">
-                            <h1> <?php echo $_GET['url'];?>  Seus itens perdidos reunidos aqui </h1>
+                            <h1> Seus itens perdidos reunidos aqui </h1>
                             <p> Encontre os seus itens perdidos em nossa plataforma, ultilizada por empresas privadas e públicas </p>
                             <button class = "btn">
                                 <a id = "WelcomeLogin" href = "LoginUser.php"> Encontrar </a>

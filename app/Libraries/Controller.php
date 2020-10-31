@@ -12,7 +12,7 @@ class Controller{
         if(file_exists($arquivo)){
             require_once $arquivo;
         }else{
-            die("O arquivo não existe");
+            die("O arquivo não existe ". $arquivo);
         }
     }
 

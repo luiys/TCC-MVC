@@ -10,8 +10,11 @@ class Paginas extends Controller{
         $this->view('Paginas/home', $dados);
     }
 
-    public function sobre(){
-        $this->view('Paginas/about');
+    public function about(){
+        $dados = [
+            'IdUser' => 'id_user'
+        ];
+        $this->view('Paginas/about', $dados);
     }
 
 }
