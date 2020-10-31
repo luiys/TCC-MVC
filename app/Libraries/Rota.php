@@ -29,6 +29,7 @@ class Rota
         $this->parametros = $url ? array_values($url) : [];
         call_user_func_array([$this->controlador, $this->metodo], $this->parametros);
 
+
     }
 
     private function url()

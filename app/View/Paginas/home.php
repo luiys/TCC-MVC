@@ -1,6 +1,6 @@
 <?php 
 
-    session_start();
+    /*session_start();
     date_default_timezone_set('America/Sao_Paulo');
 
     include 'sql/ConexaoBD.php'; 
@@ -12,7 +12,7 @@
 
         $DadosEmpresas = PegarDadosEmpresaPeloIdUsuario($base, $id);
 
-    }
+    }*/
 
     
     
@@ -25,29 +25,21 @@
 
 		<title> APE </title>
 		
-        <?php include "include/Head.php"; ?>
 
 	</head>
 
     <body id = "IndexPage" class = "UNT LightMode">
 
         <?php 
-        
-            include "php/Pag.php";
             
             //CookieStatus();
             //C_Login();
             setcookie("VerificaErro", "0", time() + (86400 * 30), "/");
-
-            include "include/Load.php";      
+     
 
         ?>
         
-		<header id = "HeaderIndex">
-
-            <?php include "include/Header.php"; ?>
-
-        </header>
+		
 
         <main id = "MainIndex">
 
@@ -58,7 +50,7 @@
                     <div id = "WelcomeHeader">
 
                         <div id = "WelcomeNav">
-                            <h1> Seus itens perdidos reunidos aqui </h1>
+                            <h1> <?php echo $_GET['url'];?>  Seus itens perdidos reunidos aqui </h1>
                             <p> Encontre os seus itens perdidos em nossa plataforma, ultilizada por empresas privadas e públicas </p>
                             <button class = "btn">
                                 <a id = "WelcomeLogin" href = "LoginUser.php"> Encontrar </a>
@@ -189,12 +181,6 @@
 
         </main>
 
-        <?php include "include/Footer.php"; ?>
-        
-        <?php include "include/SideNavBar.php"; ?>
-        <?php include "include/HeaderNotification.php"; ?>
-        <?php include "include/HeaderConfig.php"; ?>
-        <?php include "include/CookieMessage.php"; ?>
 
         <div id = "DarkEffect"></div>
 
@@ -261,8 +247,6 @@
             </ul>
 
         </div>
-
-        <?php include "include/Script.php"; ?>
 
     </body>
     
